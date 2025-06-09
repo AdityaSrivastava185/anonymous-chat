@@ -12,6 +12,16 @@
 
 ---
 
+Please make sure to add these environment variables in `.env` file to setup and run the project locally or even if you want to deploy it on cloud plarform 
+<br/>
+NOTE - THE `.env` FILE IS NOT IN THE PROJECT REPOSITORY AS IS NOT PUSHED, SO YOU NEED TO CREATE A FILE IN THE ROOT DIRECTORY OF YOUR PRJECT (I WILL ADD THE SAMPLE ENV FILE SOON)
+```bash
+OPENAI_API_KEY=your_openai_api_key
+MONGODB_URI=your_mongodb_uri
+RESEND_API_KEY=your_resend_key
+```
+
+
 ## 💡 Key Features
 
 - 🕶️ Post questions anonymously in real time
@@ -61,10 +71,4 @@ npm install
 # Start the development server
 npm run dev
 
-```
-Please make sure to add these environment variables in `.env` file to setup and run the project locally or even if you want to deploy it on cloud plarform 
-```bash
-OPENAI_API_KEY=your_openai_api_key
-MONGODB_URI=your_mongodb_uri
-RESEND_API_KEY=your_resend_key
 ```
