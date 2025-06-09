@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🕵️‍♂️ Anonymous Chat – Ask Freely, Learn Fearlessly
 
-## Getting Started
+**Anonymous Chat** is a full-stack platform built for developers and students who want to ask questions anonymously without the fear of judgment. Whether you're stuck on a bug, struggling with a concept, or just want a second opinion — this platform has your back.
 
-First, run the development server:
+> Featuring AI-powered suggestions and a judgment-free community.
+
+---
+
+## 🚧 Project Status
+
+> **Note:** This project is currently **under development**. The progress is **temporarily paused**, but the architecture and initial implementation showcase a robust tech stack and future-ready design.
+
+---
+
+## 💡 Key Features
+
+- 🕶️ Post questions anonymously in real time
+- 🤖 **AI suggestions** powered by OpenAI API for similar issues or guidance
+- 📨 Email integration via **Resend** for optional notifications
+- ⚛️ Global state managed via **Zustand**
+- 🧠 Form validation with **Zod**
+- 📦 Scalable architecture using **Next.js App Router**
+- 🧩 Beautiful and responsive UI using **ShadCN UI** and **Aceternity UI**
+- 🗃️ Backend powered by **MongoDB Atlas**
+
+---
+
+## 🧱 Tech Stack
+
+| Layer         | Technologies Used                                                                 |
+|---------------|------------------------------------------------------------------------------------|
+| Frontend      | Next.js (App Router), TypeScript, ShadCN UI, Aceternity UI                        |
+| State         | Zustand                                                                           |
+| Validation    | Zod                                                                               |
+| Backend       | MongoDB, Resend (Email)                                                           |
+| AI Integration| OpenAI API (similar question suggestions + smart hints)                          |
+| Styling       | Tailwind CSS (via ShadCN/Aceternity integration)                                  |
+
+---
+
+## 📸 Screenshots
+
+> *Screenshots will be added once development resumes.*
+
+---
+
+---
+
+## 🛠️ Getting Started (Local Dev)
 
 ```bash
+# Clone the repository
+git clone https://github.com/your-username/anonymous-chat.git
+cd anonymous-chat
+
+# Install dependencies
+npm install
+
+# Add your environment variables to `.env.local`
+
+# Start the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Please make sure to add these environment variables in `.env` file to setup and run the project locally or even if you want to deploy it on cloud plarform 
+```bash
+OPENAI_API_KEY=your_openai_api_key
+MONGODB_URI=your_mongodb_uri
+RESEND_API_KEY=your_resend_key
+```
